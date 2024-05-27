@@ -210,6 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bff33e10427264bb5cad4c229a7f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputPassword: {fileID: 954230247}
+  password: manzana
 --- !u!4 &252201881
 Transform:
   m_ObjectHideFlags: 0
@@ -486,7 +488,7 @@ GameObject:
   - component: {fileID: 713684826}
   - component: {fileID: 713684825}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Txt_Bienvenido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 102}
+  m_AnchoredPosition: {x: 0.000022888, y: 98}
   m_SizeDelta: {x: 241.80899, y: 45.515488}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &713684825
@@ -532,7 +534,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 39
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 59
@@ -629,7 +631,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 789954267}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 252201880}
+        m_MethodName: CheckPassword
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &789954267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +767,7 @@ GameObject:
   - component: {fileID: 852126864}
   - component: {fileID: 852126863}
   m_Layer: 5
-  m_Name: Txt_Bienvenido
+  m_Name: Texto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,7 +866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.2502, y: -18}
+  m_AnchoredPosition: {x: -5.2502136, y: -18}
   m_SizeDelta: {x: -295.6906, y: -163.3742}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &920088785
@@ -869,7 +882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0.392}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -981,7 +994,7 @@ GameObject:
   - component: {fileID: 954230248}
   - component: {fileID: 954230247}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: Input_Password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

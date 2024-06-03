@@ -30,7 +30,7 @@ public class LoginManager : MonoBehaviour
 
         else
         {
-            Debug.Log("Access failed");
+            Debug.Log("Access denied");
         }
 
      }
